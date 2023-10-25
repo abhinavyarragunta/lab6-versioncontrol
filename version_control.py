@@ -6,6 +6,14 @@ def encode(password):
     password = ''.join(password)
     return password
 
+def decode(password):
+    a = ''
+    for i in range(len(password)):
+        b = int(password[i])
+        b += 7
+        b %= 10
+        a = a + str(b)
+    return a
 
 def main():
     password = list(input('Enter password: '))
