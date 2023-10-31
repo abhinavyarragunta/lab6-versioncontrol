@@ -8,7 +8,7 @@ def encode(password):
     password = ''.join(password)
     return password
 
-
+#Rich Nguyen
 def decode(password):
     a = ''
     for i in range(len(password)):
